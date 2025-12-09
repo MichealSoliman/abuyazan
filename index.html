@@ -1,0 +1,2780 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="w-full">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابو يزن - ديكورات خارجية وداخلية في المملكة العربية السعودية</title>
+    <meta name="keywords" content="ديكورات خارجية، حدائق، نوافير، شلالات، تصميم مناظر طبيعية، المملكة العربية السعودية">
+    <meta name="description"
+        content="شركة ابو يزن للديكورات الخارجية والداخلية - تصميم وتنفيذ أجمل الحدائق والنوافير والشلالات في المملكة العربية السعودية">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary: #0f3d2b;
+            --secondary: #053340;
+            --accent: #B4D52A;
+            --dark: #0B5536;
+            --light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .text-primary {
+            color: var(--accent) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary) !important;
+        }
+
+        .bg-accent {
+            background-color: var(--accent) !important;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(15, 62, 44, 0.9), rgba(15, 62, 44, 0.7)),
+                url('img/image/cover.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--secondary);
+            border: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(11, 85, 54, 0.2);
+        }
+
+        .service-card,
+        .project-card,
+        .feature-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover,
+        .project-card:hover,
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-scrolled {
+            background-color: rgba(15, 62, 44, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--accent), #9BC61A);
+            color: white;
+            transform: rotate(-2deg);
+        }
+
+        .stat-card:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        .image-hover {
+            transition: transform 0.5s ease;
+        }
+
+        .image-hover:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px) rotate(5deg);
+            background-color: var(--accent) !important;
+            color: var(--secondary) !important;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 1000;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 15px 25px;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-attachment: scroll;
+            }
+
+            .floating-btn {
+                bottom: 20px;
+                left: 20px;
+                transform: scale(0.9);
+            }
+
+            .whatsapp-btn {
+                bottom: 20px;
+                right: 20px;
+                transform: scale(0.9);
+            }
+        }
+    </style>
+</head>
+
+<body class="relative">
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/966506012929" target="_blank" class="whatsapp-btn flex items-center gap-2 font-bold">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span>تواصل واتساب</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-primary/90 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="img/image/logo.png" alt="Logo"
+                        class="h-14 group-hover:scale-110 transition-transform duration-300">
+                    <div>
+                        <h2
+                            class="text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300">
+                            ابو يزن</h2>
+                        <p class="text-white text-sm">لتنسيق الحدائق</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">الرئيسية</a>
+                    <a href="#about"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">من
+                        نحن</a>
+                    <a href="#services"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">خدماتنا</a>
+                    <a href="#projects"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">مشاريعنا</a>
+                    <a href="#gallery"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">معرض
+                        الأعمال</a>
+                    <a href="#contact"
+                        class="text-white hover:text-accent font-medium transition-colors duration-300 text-lg">تواصل
+                        معنا</a>
+                    <a href="tel:0506012929" class="btn-primary px-6 py-2 rounded-full font-bold">
+                        <i class="fas fa-phone ml-2"></i>اتصل بنا
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-primary/95 backdrop-blur-sm rounded-lg mt-2 p-4">
+                <div class="flex flex-col gap-4">
+                    <a href="#home"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">الرئيسية</a>
+                    <a href="#about"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">من
+                        نحن</a>
+                    <a href="#services"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">خدماتنا</a>
+                    <a href="#projects"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">مشاريعنا</a>
+                    <a href="#gallery"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">معرض
+                        الأعمال</a>
+                    <a href="#contact"
+                        class="text-white hover:text-accent py-2 border-b border-white/20 transition-colors duration-300">تواصل
+                        معنا</a>
+                    <a href="tel:0506012929" class="btn-primary text-center py-3 rounded-full font-bold mt-4">
+                        <i class="fas fa-phone ml-2"></i>اتصل بنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section pt-32 pb-20 md:pt-40 md:pb-32 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="mb-6">
+                        <span class="bg-accent/20 text-accent px-4 py-2 rounded-full font-bold text-sm md:text-base">
+                            شركة معتمدة في المملكة
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span class="text-accent">ابو يزن</span> للديكورات الخارجية
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-200">
+                        نحول مساحتك الخارجية إلى تحفة فنية تجمع بين الجمال والوظيفة. خبرة 25 عاماً في تصميم وتنفيذ أجمل
+                        الحدائق والنوافير في المملكة.
+                    </p>
+
+                    <!-- الخدمات الرئيسية -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-bold text-accent mb-4"> تقدم :</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl">
+                                <div class="bg-accent p-2 rounded-lg">
+                                    <i class="fas fa-tree text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium">تنسيق حدائق بالرياض</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl">
+                                <div class="bg-accent p-2 rounded-lg">
+                                    <i class="fas fa-umbrella-beach text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium">تصميم مظلات جلسات</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl">
+                                <div class="bg-accent p-2 rounded-lg">
+                                    <i class="fas fa-seedling text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium">تركيب العشب الصناعي</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl">
+                                <div class="bg-accent p-2 rounded-lg">
+                                    <i class="fas fa-wood text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium">تكسيات بديل الخشب</span>
+                            </div>
+                        </div>
+                        <div class="mt-3 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl">
+                            <div class="flex items-center gap-2">
+                                <div class="bg-accent p-2 rounded-lg">
+                                    <i class="fas fa-water text-white text-sm"></i>
+                                </div>
+                                <span class="font-medium">تركيب جميع الشلالات</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الأزرار -->
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:0506012929"
+                            class="btn-primary px-8 py-3 rounded-full text-lg flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>تواصل معنا</span>
+                        </a>
+                        <a href="#projects"
+                            class="border-2 border-accent text-accent px-8 py-3 rounded-full text-lg hover:bg-accent hover:text-white transition-all duration-300 flex items-center gap-2">
+                            <i class="fas fa-eye"></i>
+                            <span>مشاريعنا</span>
+                        </a>
+                    </div>
+
+                    <!-- مؤشرات الأداء -->
+                    <div class="mt-12 grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">25+</div>
+                            <div class="text-sm text-gray-300">سنوات خبرة</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">500+</div>
+                            <div class="text-sm text-gray-300">مشروع منفذ</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">100%</div>
+                            <div class="text-sm text-gray-300">رضا عملاء</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معرض الصور -->
+                <div class="fade-in relative">
+                    <!-- الصور الرئيسية -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+                                <img src="img/image/IMG-20250319-WA0067.jpg" alt="ديكور خارجي"
+                                    class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="absolute bottom-4 right-4 text-white text-sm font-bold">
+                                        تنسيق حدائق
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+                                <img src="img/image/IMG-20250319-WA0064.jpg" alt="ديكور خارجي"
+                                    class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="absolute bottom-4 right-4 text-white text-sm font-bold">
+                                        عشب صناعي
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+                                <img src="img/image/IMG-20250319-WA0002.jpg" alt="ديكور خارجي"
+                                    class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="absolute bottom-4 right-4 text-white text-sm font-bold">
+                                        مظلات جلسات
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden rounded-2xl shadow-2xl group">
+                                <img src="img/image/IMG-20250319-WA0058.jpg" alt="ديكور خارجي"
+                                    class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="absolute bottom-4 right-4 text-white text-sm font-bold">
+                                        شلالات مميزة
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - النسخة المطورة -->
+    <section id="about" class="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <!-- خلفية زخرفية -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute top-20 right-20 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-48 h-48 bg-primary rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- عنوان رئيسي مع تأثير خاص -->
+            <div class="text-center mb-16 fade-in">
+                <div class="inline-flex items-center gap-3 mb-4">
+                    <div class="w-12 h-1 bg-primary"></div>
+                    <span class="text-accent font-bold tracking-wider">من نحن</span>
+                    <div class="w-12 h-1 bg-primary"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#0f3d2b] leading-tight">
+                    <span class="text-[#0f3d2b]">شركة ابو يزن</span> للديكورات الخارجية
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    خبرة 25 عاماً في تحويل المساحات الخارجية إلى لوحات فنية حية
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- المحتوى مع أنيميشن -->
+                <div class="fade-in">
+                    <!-- رسالة ترحيبية -->
+                    <div class="bg-accent/5 border-r-4 border-accent p-6 rounded-2xl mb-8">
+                        <h3 class="text-2xl font-bold text-[#0f3d2b] mb-3">🎨 نحن متخصصون في:</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            تحويل المساحات الخارجية إلى جمال طبيعي باستخدام أحدث التقنيات وأجود المواد
+                        </p>
+                    </div>
+
+                    <!-- الخدمات في أنيميشن -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold text-[#0f3d2b] mb-6 flex items-center gap-2">
+                            <i class="fas fa-star text-accent"></i>
+                            خدماتنا المميزة
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 service-animation">
+                            <!-- خدمة 1 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-tree text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تنسيق الحدائق الخارجية</h4>
+                                        <p class="text-gray-600 text-sm">تصميم وتنفيذ حدائق بتقنيات حديثة</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خدمة 2 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-umbrella-beach text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تصميم مظلات جلسات</h4>
+                                        <p class="text-gray-600 text-sm">مظلات أنيقة ومقاومة للعوامل الجوية</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خدمة 3 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-seedling text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تركيب العشب الصناعي</h4>
+                                        <p class="text-gray-600 text-sm">عشب صناعي عالي الجودة وطويل الأمد</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خدمة 4 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-water text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تركيب الشلالات والنافورات</h4>
+                                        <p class="text-gray-600 text-sm">شلالات بتصاميم فريدة وإضاءة مميزة</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خدمة 5 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-wood text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تكسيات بديل الخشب</h4>
+                                        <p class="text-gray-600 text-sm">بدائل خشب مقاومة ومتينة وعصرية</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- خدمة 6 -->
+                            <div
+                                class="service-feature bg-white p-5 rounded-xl shadow-lg border border-gray-100 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+                                <div class="flex items-start gap-4">
+                                    <div class="bg-accent/10 p-3 rounded-full">
+                                        <i class="fas fa-spa text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2 text-[#0f3d2b]">تصميم أحواض زراعية طبيعي</h4>
+                                        <p class="text-gray-600 text-sm">أحواض بتصاميم طبيعية وأشكال أنيقة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ميزات الشركة -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div
+                            class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div class="bg-accent p-3 rounded-full">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0f3d2b]">تصاميم عصرية</h5>
+                                <p class="text-sm text-gray-600">أحدث صيحات التصميم</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div class="bg-accent p-3 rounded-full">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0f3d2b]">مواد عالية الجودة</h5>
+                                <p class="text-sm text-gray-600">أجود أنواع المواد</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div class="bg-accent p-3 rounded-full">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0f3d2b]">فريق محترف</h5>
+                                <p class="text-sm text-gray-600">خبراء متخصصون</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <div class="bg-accent p-3 rounded-full">
+                                <i class="fas fa-check text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-[#0f3d2b]">ضمان الجودة</h5>
+                                <p class="text-sm text-gray-600">خدمات مضمونة</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- زر التواصل مع أنيميشن -->
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <a href="https://wa.me/966506012929" target="_blank"
+                            class="btn-primary px-8 py-3 rounded-full text-lg inline-flex items-center gap-2 animate-pulse-slow">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>تواصل واتساب</span>
+                        </a>
+                        <a href="tel:0506012929"
+                            class="border-2 border-[#0f3d2b] text-[#0f3d2b] px-8 py-3 rounded-full text-lg inline-flex items-center gap-2 hover:bg-[#0f3d2b] hover:text-white transition-all duration-300">
+                            <i class="fas fa-phone text-lg"></i>
+                            <span>اتصل بنا</span>
+                        </a>
+                    </div>
+
+                    <!-- شعارات العلامات التجارية (اختياري) -->
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <p class="text-gray-600 mb-4">نعمل مع أفضل الموردين</p>
+                        <div class="flex flex-wrap gap-6 items-center">
+                            <div class="text-gray-400 font-bold opacity-50">Quality</div>
+                            <div class="text-gray-400 font-bold opacity-50">Premium</div>
+                            <div class="text-gray-400 font-bold opacity-50">Elegant</div>
+                            <div class="text-gray-400 font-bold opacity-50">Luxury</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الصورة مع تأثيرات متحركة -->
+                <div class="relative fade-in">
+                    <!-- الصورة الرئيسية -->
+                    <div
+                        class="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                        <img src="img/image/logo.png" alt="عن الشركة"
+                            class="w-full h-[550px] object-cover image-animation">
+
+
+
+                        <!-- نص متحرك على الصورة -->
+                        <div class="absolute bottom-0 left-0 right-0 p-8 text-white">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h4 class="text-2xl font-bold mb-2">من أين أتينا؟</h4>
+                                    <p class="opacity-90">شركة سعودية برؤية عالمية</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-3xl font-bold">1999</div>
+                                    <div class="text-sm opacity-90">سنة التأسيس</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- بطاقات عائمة -->
+                    <div class="absolute -top-6 -right-6 floating-card">
+                        <div class="bg-primary text-white p-6 rounded-2xl shadow-2xl transform rotate-3">
+                            <div class="text-center">
+                                <div class="text-5xl font-bold counter" data-target="25">0</div>
+                                <div class="text-lg font-medium mt-2">عاماً من الخبرة</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-6 -left-6 floating-card animation-delay-2">
+                        <div class="bg-white p-6 rounded-2xl shadow-2xl border-2 border-accent/20 transform -rotate-2">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary counter" data-target="500">0</div>
+                                <div class="text-lg font-medium mt-2 text-gray-600">مشروع منفذ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- شريط إحصاءات في الأسفل -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div
+                    class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl font-bold text-accent mb-2 counter" data-target="100">0</div>
+                    <div class="text-gray-600">مدينة سعودية</div>
+                </div>
+                <div
+                    class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl font-bold text-accent mb-2 counter" data-target="1000">0</div>
+                    <div class="text-gray-600">عميل راضٍ</div>
+                </div>
+                <div
+                    class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl font-bold text-accent mb-2 counter" data-target="50">0</div>
+                    <div class="text-gray-600">فريق محترف</div>
+                </div>
+                <div
+                    class="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl font-bold text-accent mb-2 counter" data-target="24">0</div>
+                    <div class="text-gray-600">ساعة دعم</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إضافة CSS للأنيميشن -->
+    <style>
+        /* أنيميشن للصورة */
+        .image-animation {
+            animation: floatImage 20s ease-in-out infinite;
+        }
+
+        @keyframes floatImage {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* بطاقات عائمة */
+        .floating-card {
+            animation: floatCard 6s ease-in-out infinite;
+        }
+
+        .animation-delay-2 {
+            animation-delay: 2s;
+        }
+
+        @keyframes floatCard {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(3deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(3deg);
+            }
+        }
+
+        /* تأثير نبض للزر */
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        /* أنيميشن للخدمات */
+        .service-feature {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .service-feature:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .service-feature:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .service-feature:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .service-feature:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .service-feature:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .service-feature:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تأثيرات للعناصر */
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تدرجات وخلفيات */
+        .bg-gradient-radial {
+            background: radial-gradient(circle at center, var(--accent) 0%, transparent 70%);
+        }
+    </style>
+
+    <!-- إضافة JavaScript للعدادات -->
+    <script>
+        // كود العدادات المتدرجة
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.counter');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000; // 2 ثانية
+                        const increment = target / (duration / 16);
+                        let current = 0;
+
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
+                                clearInterval(timer);
+                            } else {
+                                counter.textContent = Math.floor(current) + (counter.textContent.includes('+') ? '+' : '');
+                            }
+                        }, 16);
+
+                        observer.unobserve(counter);
+                    }
+                });
+            }, {
+                threshold: 0.5,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+
+            // تأثيرات إضافية عند التمرير
+            const serviceFeatures = document.querySelectorAll('.service-feature');
+            const serviceObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            serviceFeatures.forEach(feature => {
+                serviceObserver.observe(feature);
+            });
+
+            // تأثيرات hover للبطاقات
+            const cards = document.querySelectorAll('.service-feature, .floating-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+        });
+    </script>
+
+    <!-- Services Section - النسخة المطورة -->
+    <section id="services" class="py-24 bg-gradient-to-br from-white via-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <!-- العنوان مع تأثير خاص -->
+            <div class="text-center mb-20 fade-in">
+                <div class="inline-flex items-center justify-center gap-3 mb-6">
+                    <div class="w-8 h-1 bg-primary rounded-full"></div>
+                    <span class="text-accent font-bold text-lg tracking-wider">الخدمات المميزة</span>
+                    <div class="w-8 h-1 bg-primary rounded-full"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#0f3d2b] leading-tight">
+                    خدماتنا <span class="text-[#0f3d2b]">المهنية</span> في الديكور الخارجي
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    نقدم مجموعة متكاملة من الخدمات في مجال الديكورات الخارجية بأعلى معايير الجودة والاحترافية
+                </p>
+            </div>
+
+            <!-- خدمات بطريقة رقمية -->
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+                <!-- الخدمة 1 -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            01
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0066.jpg" alt="تصميم وتنفيذ الحدائق"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- أيقونة الخدمة -->
+                        <!-- <div class="mb-6">
+                        <div class="bg-[#0f3d2b] text-white w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tree text-3xl text-accent"></i>
+                        </div>
+                    </div> -->
+
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            تصميم وتنفيذ الحدائق
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            تصميم وتنفيذ الحدائق بأحدث الأساليب والتقنيات مع مراعاة المناخ السعودي والاستدامة، نقدم
+                            حلولاً مبتكرة تجمع بين الجمال والوظيفة.
+                        </p>
+
+                        <!-- ميزات الخدمة -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تصاميم عصرية ومبتكرة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">نباتات مناسبة للمناخ</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">نظام ري متطور</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في خدمة تصميم وتنفيذ الحدائق"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 2 -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            02
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0019.jpg" alt="نوافير وشلالات"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- أيقونة الخدمة -->
+                        <!-- <div class="mb-6">
+                        <div class="bg-[#0f3d2b] w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-water text-3xl text-white"></i>
+                        </div>
+                    </div> -->
+
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            نوافير وشلالات
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            تصميم وتنفيذ النوافير والشلالات بتصاميم عصرية وتقنيات متطورة تضمن الجمال والكفاءة، مع إضاءة
+                            مميزة تعزز جمالية المكان.
+                        </p>
+
+                        <!-- ميزات الخدمة -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تصاميم فريدة ومبتكرة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">إضاءة LED متطورة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تحكم رقمي ذكي</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في خدمة النوافير والشلالات"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 3 -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            03
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0017.jpg" alt="جلسات خارجية"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- أيقونة الخدمة -->
+                        <!-- <div class="mb-6">
+                        <div class="bg-[#0f3d2b] w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-couch text-3xl text-white"></i>
+                        </div>
+                    </div> -->
+
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            جلسات خارجية
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            تصميم وتنفيذ الجلسات الخارجية مع مراعاة الراحة والجمال والانسجام مع الطبيعة المحيطة، بأجود
+                            المواد وأحدث التصاميم.
+                        </p>
+
+                        <!-- ميزات الخدمة -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">مواد مقاومة للعوامل الجوية</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تصاميم مريحة وعصرية</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">إضاءة وتكييف مناسب</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في خدمة الجلسات الخارجية"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة 4 -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            04
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0060.jpg" alt="الأحواض الزراعية"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            الأحواض الزراعية
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            حوّلك مساحة بيتك إلى واحة خضراء! 🌿
+                            الأحواض الزراعية تضيف لمسة جمالية فريدة لأي مدخل أو فناء، وتوفر بيئة مثالية لزراعة الورود،
+                            النباتات الطبية، أو حتى الخضروات 🌸🌱
+                            مظهر أنيق + تحسين جودة الهواء + إحساس بالراحة النفسية = استثمار ذكي في بيتك.
+                        </p>
+
+                        <!-- ميزات الخدمة -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">إضافة لمسة جمالية فريدة لأي مساحة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تحسين جودة الهواء والبيئة المحيطة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">إحساس بالراحة النفسية والاسترخاء</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في خدمة الأحواض الزراعية"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة: الجلسة الشتوية -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            05
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0028.jpg" alt="الجلسة الشتوية"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            الجلسة الشتوية
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            الجلسة الشتوية الأكثر طلبًا الآن!
+                            حوّل ارتداد بيتك إلى مساحة دافئة وراقية تجمع فيها الأهل والأصدقاء… تصميم عملي، تفاصيل فاخرة،
+                            إضاءة دافئة، ولمسات خشبية تعطيك روح الشتاء الحقيقية.
+                            تنفيذ احترافي يضمن لك جودة عالية وشكل يناسب ذوقك ومساحتك.
+                        </p>
+
+                        <!-- ميزات الخدمة -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تصميم عملي يناسب مساحة بيتك</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">تفاصيل فاخرة وإضاءة دافئة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">لمسات خشبية تعكس روح الشتاء</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في خدمة الجلسة الشتوية"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الخدمة: أنواع الأخشاب -->
+                <div
+                    class="service-card group bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- رقم الخدمة -->
+                    <div class="absolute top-6 right-6 z-10">
+                        <div
+                            class="bg-[#0f3d2b] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold">
+                            06
+                        </div>
+                    </div>
+
+                    <!-- صورة الخدمة (كبيرة) -->
+                    <div class="relative overflow-hidden h-72">
+                        <img src="img/image/IMG-20250319-WA0007.jpg" alt="أنواع الأخشاب"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+
+                    <!-- محتوى الخدمة -->
+                    <div class="p-8">
+                        <!-- عنوان الخدمة -->
+                        <h3
+                            class="text-2xl font-bold mb-4 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                            أنواع الأخشاب التي نقدمها
+                        </h3>
+
+                        <!-- وصف الخدمة -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            نقدّم مجموعة واسعة من أفضل أنواع الأخشاب عالية الجودة، لتناسب جميع المشاريع سواء كانت جلسات
+                            خارجية، ديكورات، مظلات، أو أعمال حدائق.
+                            نختار الأخشاب بعناية لضمان المتانة، المقاومة للحرارة والرطوبة، والمظهر الفاخر الذي يدوم
+                            سنوات طويلة.
+                        </p>
+
+                        <!-- ميزات الخدمة / أنواع الأخشاب -->
+                        <div class="space-y-2 mb-8">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">خشب الساندويتش — قوي جدًا ومقاوم للماء</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">خشب الموسكي — الشكل الجمالي والتكلفة المناسبة</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">خشب العزيزي — متين ومثالي للجلسات الخارجية</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-check-circle text-accent text-sm"></i>
+                                <span class="text-gray-700 text-sm">خشب PVC — لا يتأثر بالماء أو الشمس نهائيًا</span>
+                            </div>
+                        </div>
+
+                        <!-- أزرار التواصل -->
+                        <div class="flex gap-3">
+                            <a href="https://wa.me/966506012929?text=مرحبًا، أريد معرفة المزيد عن أنواع الأخشاب"
+                                target="_blank"
+                                class="flex-1 bg-accent text-white py-3 rounded-xl text-center font-bold hover:bg-primary transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>واتساب</span>
+                            </a>
+                            <a href="tel:0506012929"
+                                class="flex-1 bg-primary text-white py-3 rounded-xl text-center font-bold hover:bg-accent transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fas fa-phone text-lg"></i>
+                                <span>اتصال</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <!-- زر عرض جميع الخدمات -->
+            <div class="text-center mt-16 fade-in">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <a href="tel:0506012929"
+                        class="btn-primary px-10 py-4 rounded-full text-lg font-bold inline-flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-headset text-xl"></i>
+                        <span>استشارة مجانية</span>
+                    </a>
+                    <a href="#contact"
+                        class="border-2 border-[#0f3d2b] text-accent px-10 py-4 rounded-full text-lg font-bold inline-flex items-center gap-3 hover:bg-[#0f3d2b] hover:text-white transition-all duration-300">
+                        <i class="fas fa-comments text-xl"></i>
+                        <span>جميع خدماتنا</span>
+                    </a>
+                </div>
+                <p class="text-gray-500 mt-6">
+                    احصل على استشارة مجانية وتقدير سعر دقيق لخدماتنا
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- إضافة CSS للتحسينات -->
+    <style>
+        /* تنسيقات خاصة لقسم الخدمات */
+        .service-card {
+            border: 1px solid transparent;
+            background: linear-gradient(135deg, white, #f8fafc) padding-box,
+                linear-gradient(135deg, var(--accent), transparent) border-box;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .service-card:hover {
+            border-color: rgba(180, 213, 42, 0.3);
+            background: linear-gradient(135deg, white, #f9fafb) padding-box,
+                linear-gradient(135deg, var(--accent), var(--primary)) border-box;
+        }
+
+        /* تأثيرات للصور */
+        .service-card img {
+            filter: brightness(0.95);
+            transition: all 0.7s ease;
+        }
+
+        .service-card:hover img {
+            filter: brightness(1);
+        }
+
+        /* تأثيرات النصوص */
+        .service-card h3 {
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .service-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover h3::after {
+            transform: scaleX(1);
+        }
+
+        /* تنسيق الأزرار */
+        .service-card .flex-1 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card .flex-1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card .flex-1:hover::after {
+            transform: translateX(0);
+        }
+
+        /* تنسيق الأيقونات */
+        .bg-accent\/10 {
+            position: relative;
+        }
+
+        .bg-accent\/10::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--accent), transparent);
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .service-card:hover .bg-accent\/10::before {
+            opacity: 0.3;
+        }
+
+        /* تأثيرات الظهور */
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تنسيق للأجهزة المحمولة */
+        @media (max-width: 768px) {
+            .service-card {
+                margin-bottom: 30px;
+            }
+
+            .service-card .p-8 {
+                padding: 1.5rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .flex.flex-col.md\:flex-row {
+                flex-direction: column;
+            }
+
+            .flex.flex-col.md\:flex-row a {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* تنسيق لشاشات كبيرة */
+        @media (min-width: 1024px) {
+            .service-card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .service-card>div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .service-card .p-8 {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .service-card .flex.gap-3 {
+                margin-top: auto;
+            }
+        }
+    </style>
+
+
+    <!-- Projects Section  -->
+    <section id="projects" class="py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <!-- العنوان مع تأثير خاص -->
+            <div class="text-center mb-20 fade-in">
+                <div class="inline-flex items-center justify-center gap-3 mb-6">
+                    <div class="w-8 h-1 bg-[#0f3d2b] rounded-full"></div>
+                    <span class="text-[#0f3d2b] font-bold text-lg tracking-wider">معرض المشاريع</span>
+                    <div class="w-8 h-1 bg-[#0f3d2b] rounded-full"></div>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#0f3d2b] leading-tight">
+                    مشاريعنا <span class="text-[#0f3d2b]">الرائعة</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    نعرض لكم مجموعة مختارة من أفضل مشاريعنا التي تبرز جودة وتميز خدماتنا في الديكورات الخارجية
+                </p>
+            </div>
+
+            <!-- تصفية المشاريع -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in">
+                <button class="filter-btn active px-6 py-2 rounded-full bg-[#0f3d2b] text-white font-medium"
+                    data-filter="all">
+                    جميع المشاريع
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-[#0f3d2b] hover:text-white transition-all duration-300"
+                    data-filter="garden">
+                    الحدائق
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-[#0f3d2b] hover:text-white transition-all duration-300"
+                    data-filter="fountain">
+                    النوافير
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-[#0f3d2b] hover:text-white transition-all duration-300"
+                    data-filter="seating">
+                    الجلسات
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 font-medium hover:bg-[#0f3d2b] hover:text-white transition-all duration-300"
+                    data-filter="lighting">
+                    الإضاءة
+                </button>
+            </div>
+
+            <!-- 6 مشاريع -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 project-container">
+                <!-- Project 1 - حديقة منزلية -->
+                <div class="project-item" data-category="garden">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <!-- صورة المشروع مع تأثير -->
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0073.jpg" alt="تصميم حديقة منزلية"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <!-- علامة المشروع -->
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    مشروع مميز
+                                </span>
+                            </div>
+                            <!-- وقت التنفيذ -->
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    15 يوم
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <!-- معلومات المشروع -->
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">حديقة فيلا فاخرة</h3>
+                                <span class="text-accent font-bold text-lg">🔥</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                تصميم وتنفيذ حديقة خارجية متكاملة مع نافورة مركزية وجلسات خشبية وإضاءة ليلية.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">حدائق</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">نوافير</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">إضاءة</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - نافورة خارجية -->
+                <div class="project-item" data-category="fountain">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0062.jpg" alt="نافورة خارجية"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    جديد
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    7 أيام
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">نافورة حديثة</h3>
+                                <span class="text-accent font-bold text-lg">💎</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                نافورة خارجية بتصميم عصري مع إضاءة LED متطورة وبرامج تحكم ذكية.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">نوافير</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">إضاءة</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">تكنولوجيا</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - تنسيق حدائق -->
+                <div class="project-item" data-category="garden">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0075.jpg" alt="تنسيق حدائق"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    الأكثر طلباً
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    10 أيام
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">تنسيق حديقة عامة</h3>
+                                <span class="text-accent font-bold text-lg">🌿</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                تنسيق وتجميل حدائق بتصاميم عصرية تجمع بين النباتات المحلية والعالمية.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">حدائق</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">نباتات</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">تصميم</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - جلسات خارجية -->
+                <div class="project-item" data-category="seating">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0050.jpg" alt="جلسات خارجية"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    تصميم خاص
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    12 يوم
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">جلسات فاخرة</h3>
+                                <span class="text-accent font-bold text-lg">🛋️</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                تصميم وتنفيذ جلسات خارجية فاخرة مع مظلات ومقاعد مريحة وإضاءة مناسبة.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">جلسات</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">مظلات</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">راحة</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - إضاءة خارجية -->
+                <div class="project-item" data-category="lighting">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0058.jpg" alt="إضاءة خارجية"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    إبداعي
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    5 أيام
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">إضاءة ذكية</h3>
+                                <span class="text-accent font-bold text-lg">💡</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                نظام إضاءة خارجي ذكي يعمل بالطاقة الشمسية مع تحكم عن بعد وألوان متغيرة.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">إضاءة</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">ذكية</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">طاقة شمسية</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - ديكور خارجي متكامل -->
+                <div class="project-item" data-category="garden">
+                    <div
+                        class="group bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden h-80">
+                            <img src="img/image/IMG-20250319-WA0049.jpg" alt="ديكور خارجي متكامل"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    متكامل
+                                </span>
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-bold">
+                                    25 يوم
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="text-2xl font-bold text-[#0f3d2b]">ديكور فيلا متكامل</h3>
+                                <span class="text-accent font-bold text-lg">🏡</span>
+                            </div>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                تصميم خارجي متكامل يشمل حديقة، نوافير، جلسات، وإضاءة بتصميم موحد.
+                            </p>
+                            <div class="flex flex-wrap gap-4 mb-6">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">حدائق</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">نوافير</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">جلسات</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">إضاءة</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار إضافية -->
+            <div class="text-center mt-16 fade-in">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <a href="https://wa.me/966506012929?text=مرحبًا، أرغب في مشروع جديد" target="_blank"
+                        class="btn-primary px-10 py-4 rounded-full text-lg font-bold inline-flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>اطلب مشروع جديد</span>
+                    </a>
+                    <a href="tel:0506012929"
+                        class="border-2 border-[#0f3d2b] text-accent px-10 py-4 rounded-full text-lg font-bold inline-flex items-center gap-3 hover:bg-[#0f3d2b] hover:text-white transition-all duration-300">
+                        <i class="fas fa-phone text-xl"></i>
+                        <span>اتصل للمشورة</span>
+                    </a>
+                </div>
+                <p class="text-gray-500 mt-6">
+                    لكل مشروع خصوصيته، ندرس احتياجاتك ونقدم الحل الأمثل
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS إضافي للتحسينات -->
+    <style>
+        /* تنسيقات خاصة للمشاريع */
+        .project-item {
+            transition: all 0.5s ease;
+        }
+
+        .shadow-3xl {
+            box-shadow: 0 25px 50px rgba(15, 62, 44, 0.15);
+        }
+
+        .filter-btn.active {
+            box-shadow: 0 4px 15px #0f3d2b;
+        }
+
+        /* تأثيرات الظهور للمشاريع */
+        .project-item {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .project-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .project-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .project-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .project-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .project-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .project-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تدرجات خاصة */
+        .bg-gradient-to-b {
+            background: linear-gradient(to bottom, white 0%, #f8fafc 50%, white 100%);
+        }
+
+        /* تأثيرات hover للمشاريع */
+        .group:hover .absolute.inset-0 {
+            backdrop-filter: blur(2px);
+        }
+
+        /* تنسيق الأزرار داخل الصور */
+        .group:hover .absolute.inset-0 .flex {
+            animation: slideUp 0.5s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تنسيق للشاشات المختلفة */
+        @media (max-width: 768px) {
+            .project-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .filter-btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .flex.flex-col.md\:flex-row {
+                flex-direction: column;
+            }
+
+            .flex.flex-col.md\:flex-row a {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .project-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* تنسيقات للعلامات */
+        .bg-gray-100 {
+            background: rgba(15, 62, 44, 0.1);
+        }
+
+        /* تأثيرات لأسعار المشاريع */
+        .text-primary.font-bold.text-lg {
+            font-size: 1.25rem;
+            color: var(--accent);
+        }
+
+        /* تحسينات للصور */
+        .h-80 {
+            height: 20rem;
+        }
+
+        /* تنسيقات للتواريخ */
+        .bg-white\/90 {
+            background: rgba(255, 255, 255, 0.95);
+        }
+    </style>
+
+    <!-- JavaScript للتصفية والتفاعلات -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // تصفية المشاريع
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    // إزالة النشاط من جميع الأزرار
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-accent', 'text-white'));
+                    filterButtons.forEach(btn => btn.classList.add('bg-gray-100', 'text-gray-700'));
+
+                    // إضافة النشاط للزر المحدد
+                    this.classList.remove('bg-gray-100', 'text-gray-700');
+                    this.classList.add('active', 'bg-[#0f3d2b]', 'text-white');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // تصفية المشاريع
+                    projectItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 500);
+                        }
+                    });
+                });
+            });
+
+            // تأثيرات التمرير للمشاريع
+            const projectObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            projectItems.forEach(item => {
+                item.style.animationPlayState = 'paused';
+                projectObserver.observe(item);
+            });
+
+            // تأثيرات hover للمشاريع
+            projectItems.forEach(item => {
+                const projectCard = item.querySelector('.group');
+
+                projectCard.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 35px 60px rgba(15, 62, 44, 0.2)';
+                });
+
+                projectCard.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 25px 50px rgba(15, 62, 44, 0.15)';
+                });
+            });
+
+            // تأثيرات للأزرار
+            const actionButtons = document.querySelectorAll('a[href^="https://wa.me"], a[href^="tel:"]');
+            actionButtons.forEach(button => {
+                button.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.05)';
+                });
+
+                button.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- Features Section - خلفية بيضاء -->
+    <section id="features" class="py-24 bg-white relative overflow-hidden">
+        <!-- خلفية زخرفية فاتحة -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-primary rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- المحتوى -->
+                <div class="fade-in">
+                    <!-- العنوان مع تأثير خاص -->
+                    <div class="mb-12">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div class="w-8 h-1 bg-[#0f3d2b] rounded-full"></div>
+                            <span class="text-accent font-bold text-lg tracking-wider">مميزاتنا</span>
+                            <div class="w-8 h-1 bg-[#0f3d2b] rounded-full"></div>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary leading-tight">
+                            لماذا تختار <span class="text-[#0f3d2b]">ابو يزن</span>؟
+                        </h2>
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            أكثر من 25 عاماً من الخبرة والتخصص في مجال الديكورات الخارجية
+                        </p>
+                    </div>
+
+                    <!-- الميزات الرئيسية -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- الميزة 1 -->
+                        <div
+                            class="feature-card bg-gray-50 border border-gray-200 rounded-2xl p-6 hover:border-accent hover:shadow-xl transition-all duration-500 group">
+                            <div class="flex items-start gap-4">
+                                <div class="relative">
+                                    <div
+                                        class="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-all duration-500">
+                                        <i class="fas fa-drafting-compass text-accent text-2xl"></i>
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 -right-2 bg-[#0f3d2b] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
+                                        1
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold mb-3 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                                        تصاميم فريدة ومبتكرة
+                                    </h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نقدم تصاميم حصرية تناسب ذوقك وتضيف لمسة جمالية فريدة لمساحتك الخارجية
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- الميزة 2 -->
+                        <div
+                            class="feature-card bg-gray-50 border border-gray-200 rounded-2xl p-6 hover:border-accent hover:shadow-xl transition-all duration-500 group">
+                            <div class="flex items-start gap-4">
+                                <div class="relative">
+                                    <div
+                                        class="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-all duration-500">
+                                        <i class="fas fa-tools text-accent text-2xl"></i>
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 -right-2 bg-[#0f3d2b] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
+                                        2
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold mb-3 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                                        تنفيذ احترافي دقيق
+                                    </h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        فريق من الخبراء ينفذ مشروعك بأعلى معايير الجودة والدقة المتناهية
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- الميزة 3 -->
+                        <div
+                            class="feature-card bg-gray-50 border border-gray-200 rounded-2xl p-6 hover:border-accent hover:shadow-xl transition-all duration-500 group">
+                            <div class="flex items-start gap-4">
+                                <div class="relative">
+                                    <div
+                                        class="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-all duration-500">
+                                        <i class="fas fa-tint text-accent text-2xl"></i>
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 -right-2 bg-[#0f3d2b] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
+                                        3
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold mb-3 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                                        حلول مستدامة وذكية
+                                    </h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        نراعي البيئة والاستدامة في جميع مشاريعنا مع تقنيات ترشيد حديثة
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- الميزة 4 -->
+                        <div
+                            class="feature-card bg-gray-50 border border-gray-200 rounded-2xl p-6 hover:border-accent hover:shadow-xl transition-all duration-500 group">
+                            <div class="flex items-start gap-4">
+                                <div class="relative">
+                                    <div
+                                        class="bg-accent/10 w-16 h-16 rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-all duration-500">
+                                        <i class="fas fa-headset text-accent text-2xl"></i>
+                                    </div>
+                                    <div
+                                        class="absolute -top-2 -right-2 bg-[#0f3d2b] text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
+                                        4
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4
+                                        class="text-xl font-bold mb-3 text-[#0f3d2b] group-hover:text-accent transition-colors duration-300">
+                                        دعم فني متواصل
+                                    </h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        خدمات صيانة ودعم فني متواصل لضمان استمرارية جمال مشروعك
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- إحصاءات سريعة -->
+                    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                            <div class="text-3xl font-bold text-accent mb-2">25+</div>
+                            <div class="text-sm text-gray-600 font-medium">سنة خبرة</div>
+                        </div>
+                        <div class="text-center bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                            <div class="text-3xl font-bold text-accent mb-2">500+</div>
+                            <div class="text-sm text-gray-600 font-medium">مشروع منفذ</div>
+                        </div>
+                        <div class="text-center bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                            <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                            <div class="text-sm text-gray-600 font-medium">رضا عملاء</div>
+                        </div>
+                        <div class="text-center bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                            <div class="text-3xl font-bold text-accent mb-2">24/7</div>
+                            <div class="text-sm text-gray-600 font-medium">دعم فني</div>
+                        </div>
+                    </div>
+
+                    <!-- زر التواصل -->
+                    <div class="mt-12">
+                        <a href="https://wa.me/966506012929" target="_blank"
+                            class="btn-primary bg-[#0f3d2b] text-white px-8 py-4 rounded-full text-lg font-bold inline-flex items-center gap-3 hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>ابدأ مشروعك الآن</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- الصورة مع تأثيرات -->
+                <div class="fade-in relative">
+                    <!-- الصورة الرئيسية -->
+                    <div class="relative">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-r from-accent/10 to-primary/10 rounded-3xl blur-xl">
+                        </div>
+                        <div class="relative bg-white rounded-3xl shadow-2xl p-8 border border-gray-200">
+                            <img src="img/image/logo.png" alt="شعار ابو يزن"
+                                class="w-full h-auto rounded-2xl transform hover:scale-105 transition-transform duration-700">
+
+                            <!-- معلومات حول الشعار -->
+                            <div class="mt-8 grid grid-cols-2 gap-6">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-accent mb-2">1999</div>
+                                    <div class="text-sm text-gray-600">سنة التأسيس</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-accent mb-2">100+</div>
+                                    <div class="text-sm text-gray-600">مدينة سعودية</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- بطاقات عائمة -->
+                    <div
+                        class="absolute -top-6 -right-6 bg-white text-primary p-6 rounded-2xl shadow-2xl border border-gray-200 animate-float">
+                        <div class="text-center">
+                            <i class="fas fa-award text-3xl text-accent mb-2"></i>
+                            <div class="text-sm font-medium text-gray-600">شركة معتمدة</div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-accent text-white p-6 rounded-2xl shadow-2xl animate-float-delay">
+                        <div class="text-center">
+                            <i class="fas fa-star text-3xl text-white mb-2"></i>
+                            <div class="text-sm font-medium">جودة ممتازة</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ميزات إضافية -->
+            <div class="mt-24 bg-gray-50 rounded-3xl p-12 border border-gray-200">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
+                            <i class="fas fa-clock text-3xl text-accent"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-[#0f3d2b]">التزام بالمواعيد</h4>
+                        <p class="text-gray-600">نلتزم بمواعيد التسليم المتفق عليها بدقة</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
+                            <i class="fas fa-shield-alt text-3xl text-accent"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-[#0f3d2b]">ضمان الجودة</h4>
+                        <p class="text-gray-600">ضمان على جميع أعمالنا لمدة 5 سنوات</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-accent/10 rounded-full mb-6">
+                            <i class="fas fa-handshake text-3xl text-accent"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-[#0f3d2b]">شفافية كاملة</h4>
+                        <p class="text-gray-600">عرض كامل التكاليف قبل البدء بالمشروع</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* تأثيرات عائمة */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .animate-float-delay {
+            animation: float 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        /* تأثيرات الظهور */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تأثيرات hover للكروت */
+        .feature-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* تنسيقات عامة */
+        .bg-gray-50 {
+            background-color: #f9fafb;
+        }
+
+        .border-gray-200 {
+            border-color: #e5e7eb;
+        }
+
+        /* تنسيقات للهواتف */
+        @media (max-width: 768px) {
+            .py-24 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .grid.md\:grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .p-12 {
+                padding: 1.5rem;
+            }
+
+            .absolute.-top-6 {
+                top: -1.5rem;
+            }
+
+            .absolute.-bottom-6 {
+                bottom: -1.5rem;
+            }
+        }
+
+        /* تنسيقات للأيقونات */
+        .fa-drafting-compass:hover {
+            animation: rotate 0.5s ease;
+        }
+
+        .fa-tools:hover {
+            animation: shake 0.5s ease;
+        }
+
+        .fa-tint:hover {
+            animation: drip 0.5s ease;
+        }
+
+        .fa-headset:hover {
+            animation: bounce 0.5s ease;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: rotate(0);
+            }
+
+            25% {
+                transform: rotate(10deg);
+            }
+
+            75% {
+                transform: rotate(-10deg);
+            }
+        }
+
+        @keyframes drip {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* تأثيرات للزر */
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .btn-primary:hover::after {
+            transform: translateX(0);
+        }
+    </style>
+
+
+    <!-- Social Media Section -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 fade-in">
+                <div class="inline-flex items-center justify-center mb-4">
+                    <span class="w-12 h-1 bg-[#0f3d2b] rounded-full"></span>
+                    <span class="mx-4 text-accent font-bold">تابعنا</span>
+                    <span class="w-12 h-1 bg-[#0f3d2b] rounded-full"></span>
+                </div>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-[#0f3d2b]">
+                    تابع أعمالنا على وسائل التواصل
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    شاهد المزيد من مشاريعنا وأحدث التصاميم على منصات التواصل الاجتماعي
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Instagram Card -->
+                <div class="group">
+                    <div
+                        class="relative overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-pink-200 transform hover:-translate-y-2">
+                        <!-- Hover effect background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-pink-600/0 via-pink-600/5 to-pink-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-instagram text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">انستجرام</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                تابع أحدث تصاميمنا ومشاريعنا اليومية مع بثور حصرية من مواقع العمل
+                            </p>
+                            <a href="https://www.instagram.com/bwyznldwly9" target="_blank"
+                                class="inline-flex items-center justify-center gap-2 text-accent font-bold group/link">
+                                <span>@bwyznldwly9</span>
+                                <i
+                                    class="fas fa-external-link-alt text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="flex justify-center gap-2">
+                                    <span class="text-sm text-gray-500">📸 صور يومية</span>
+                                    <span class="text-sm text-gray-500">•</span>
+                                    <span class="text-sm text-gray-500">🎥 ستوريات</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok Card -->
+                <div class="group">
+                    <div
+                        class="relative overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-800 transform hover:-translate-y-2">
+                        <!-- Hover effect background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-black/0 via-black/5 to-black/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-gray-900 to-gray-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-tiktok text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">تيك توك</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                مقاطع فيديو قصيرة ومشوّقة لأجمل أعمالنا قبل وبعد التنفيذ
+                            </p>
+                            <a href="https://www.tiktok.com/@user4135122288074" target="_blank"
+                                class="inline-flex items-center justify-center gap-2 text-accent font-bold group/link">
+                                <span>@user4135122288074</span>
+                                <i
+                                    class="fas fa-external-link-alt text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="flex justify-center gap-2">
+                                    <span class="text-sm text-gray-500">🎬 فيديوهات قصيرة</span>
+                                    <span class="text-sm text-gray-500">•</span>
+                                    <span class="text-sm text-gray-500">⚡ محتوى تفاعلي</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Card -->
+                <div class="group">
+                    <div
+                        class="relative overflow-hidden bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 transform hover:-translate-y-2">
+                        <!-- Hover effect background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-red-600/0 via-red-600/5 to-red-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000">
+                        </div>
+
+                        <div class="relative z-10">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-red-600 to-red-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-youtube text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-3 text-gray-800">يوتيوب</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                فيديوهات تعليمية وتوثيقية مفصّلة لمشاريعنا مع شرح عمليات التنفيذ
+                            </p>
+                            <a href="https://youtube.com/channel/UC8ReleLgEw1XIyNwN109Gxw" target="_blank"
+                                class="inline-flex items-center justify-center gap-2 text-accent font-bold group/link">
+                                <span>ابو يزن للديكورات</span>
+                                <i
+                                    class="fas fa-external-link-alt text-sm transform group-hover/link:translate-x-1 transition-transform"></i>
+                            </a>
+                            <div class="mt-6 pt-6 border-t border-gray-100">
+                                <div class="flex justify-center gap-2">
+                                    <span class="text-sm text-gray-500">📽️ فيديوهات طويلة</span>
+                                    <span class="text-sm text-gray-500">•</span>
+                                    <span class="text-sm text-gray-500">🎓 تعليمات</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="img/image/logo.png" alt="Logo" class="h-12">
+                        <div>
+                            <h3 class="text-2xl font-bold">ابو يزن</h3>
+                            <p class="text-accent">للديكورات الخارجية</p>
+                        </div>
+                    </div>
+                    <p class="mb-6 opacity-90">
+                        خبرة 25 عاماً في تصميم وتنفيذ أجمل الديكورات الخارجية في المملكة العربية السعودية
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-accent"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span>0506012929</span>
+                        </p>
+                        <p class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span>info@abuyazanstyle.com</span>
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/bwyznldwly9" target="_blank"
+                            class="social-icon bg-white/10 rounded-full text-white hover:bg-accent">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@user4135122288074" target="_blank"
+                            class="social-icon bg-white/10 rounded-full text-white hover:bg-accent">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com/channel/UC8ReleLgEw1XIyNwN109Gxw" target="_blank"
+                            class="social-icon bg-white/10 rounded-full text-white hover:bg-accent">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/bwyzn8338" target="_blank"
+                            class="social-icon bg-white/10 rounded-full text-white hover:bg-accent">
+                            <i class="fab fa-snapchat-ghost"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-accent">خدماتنا</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">تصميم حدائق</a></li>
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">نوافير وشلالات</a>
+                        </li>
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">جلسات خارجية</a>
+                        </li>
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">إضاءة خارجية</a>
+                        </li>
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">تنسيق مواقع</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-accent">روابط سريعة</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">الرئيسية</a></li>
+                        <li><a href="#about" class="opacity-90 hover:text-accent transition-colors duration-300">من
+                                نحن</a></li>
+                        <li><a href="#services"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">خدماتنا</a></li>
+                        <li><a href="#projects"
+                                class="opacity-90 hover:text-accent transition-colors duration-300">مشاريعنا</a></li>
+                        <li><a href="#gallery" class="opacity-90 hover:text-accent transition-colors duration-300">معرض
+                                الأعمال</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-accent">تواصل معنا</h4>
+                    <p class="opacity-90 mb-6">نحن هنا لتحقيق رؤيتك وتحويل مساحتك إلى تحفة فنية</p>
+
+                    <a href="tel:0506012929"
+                        class="border-2 border-accent text-accent w-full py-3 rounded-full text-center hover:bg-accent hover:text-white transition-colors duration-300 inline-block">
+                        <i class="fas fa-phone ml-2"></i>اتصل بنا الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="opacity-90 mb-4">
+                    جميع الحقوق محفوظة &copy; 2025 <span class="text-accent font-bold">ابو يزن للديكورات الخارجية</span>
+                </p>
+                <p class="opacity-70">
+                    تصميم وتطوير <a href="#" class="text-accent hover:underline">Fashne For Digital Marketing</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Fade-in Animation on Scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Lazy Load Images
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img');
+
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src;
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+
+        // WhatsApp Button Animation
+        const whatsappBtn = document.querySelector('.whatsapp-btn');
+        setInterval(() => {
+            whatsappBtn.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                whatsappBtn.style.transform = 'scale(1)';
+            }, 300);
+        }, 3000);
+    </script>
+</body>
+
+</html>
